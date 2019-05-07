@@ -1,0 +1,192 @@
+Cell 1
+Button 4
+
+/~set-voice:1
+
+Pre literacy questions. Spatial orientation material set demo
+
+/~disp-cell-clear:0
+
+/~sound:0.wav
+
+/~disp-cell-pins:0 10100000
+
+The pins being displayed right now are 1 and 3, the top and bottom pins on the left side of the cell.
+
+/~disp-cell-clear:0
+/~pause:1
+/~disp-cell-pins:0 00010100
+
+Now, the pins being displayed are 4 and 6, the top and bottom pins on the right side.
+/~disp-cell-clear:0
+/~pause:2
+/~disp-cell-pins:0 10100000
+
+Here's the question: What pins are up right now? Are they the pins 1 and 3, or are they the pins 4 and 6?
+Press the button 1 for pins 1 and 3, or press button 2 for pins 4 and 6.
+/~skip-button:0 ONEE
+/~skip-button:1 TWOO
+/~user-input
+
+/~ONEE
+/~sound:correct.wav
+That's correct! The pins being displayed are 1 and 3, which are the top and bottom pins on the left side of the cell.
+/~point
+/~say-score
+/~skip:NEXTT
+
+/~TWOO
+/~sound:wrong.wav
+I'm sorry! That's incorrect. The pins being displayed are 1 and 3, which are the top and bottom pins on the left side of the cell, 
+and not 4 and 6,
+/~disp-cell-clear:0
+/~disp-cell-pins:0 00010100
+which are on the right side of the cell.
+/~say-score
+/~skip:NEXTT
+
+/~NEXTT
+/~disp-cell-clear:0
+Here's question two out of six:
+/~disp-cell-pins:0 10010000
+The pins being displayed right now are pins 1 and 4, which are the two top pins.
+/~disp-cell-clear:0
+/~pause:1
+/~disp-cell-pins:0 01001000
+
+Now, the pins being displayed are pins 2 and 5, which are the two middle pins.
+/~disp-cell-clear:0
+/~pause:2
+/~disp-cell-pins:0 01001000
+
+What pins are up right now? Are they the pins 2 and 5, or are they the pins 1 and 4?
+Press the button 1 for pins 2 and 5, or press button 2 for pins 1 and 4.
+/~user-input
+
+/~ONEE
+/~sound:correct.wav
+That's correct! The pins being displayed are 2 and 5, which are the two middle pins.
+/~point
+/~say-score
+/~skip:NEXTT
+
+/~TWOO
+/~sound:wrong.wav
+I'm sorry! That's incorrect. The pins being displayed are 2 and 5, which are the two middle pins, 
+and not 4 and 6, 
+/~disp-cell-clear:0
+/~disp-cell-pins:0 10010000
+which are the two pins on the top of the cell.
+/~say-score
+/~skip:NEXTT
+
+/~NEXTT
+/~disp-cell-clear:0
+Here's question 3 out of 6:
+/~disp-cell-pins:0 00100100
+Right now, the cell is displaying pins 3 and 6, which are the two bottom pins.
+/~disp-cell-clear:0
+/~pause:1
+/~disp-cell-pins:0 10010000
+And now, the cell is displaying pins 1 and 4, which are the two top pins.
+/~disp-cell-clear:0
+/~pause:2 
+/~disp-cell-pins:0 00100100
+
+What pins are up right now? Are they the pins 1 and 4, or are they the pins 3 and 6?
+Press the button 1 for pins 1 and 4, or press button 2 for pins 3 and 6.
+/~user-input
+
+/~ONEE
+/~sound:wrong.wav
+I'm sorry! That's incorrect. The pins being displayed are 3 and 6, which are the two pins on the bottom side, 
+and not 1 and 4, 
+/~disp-cell-clear:0
+/~disp-cell-pins:0 10010000
+which are the two pins on the top of the cell.
+/~say-score
+/~skip:NEXTT
+
+/~TWOO
+/~sound:correct.wav
+That's correct! The pins being displayed are 3 and 6, which are the two bottom pins.
+/~point
+/~say-score
+/~skip:NEXTT
+
+/~NEXTT
+/~disp-cell-clear:0
+Here's question 4 out of 6:
+/~disp-cell-pins:0 10100000
+What pins are up right now? Are they the pins 4 and 6, or are they the pins 1 and 3?
+Press the button 1 for pins 4 and 6, or press button 2 for pins 1 and 3.
+/~user-input
+
+/~ONEE
+/~sound:wrong.wav
+I'm sorry! That's incorrect. The pins being displayed are 1 and 3, which are the top and bottom pins on the left side, 
+and not 4 and 6,
+/~disp-cell-clear:0
+/~disp-cell-pins:0 00010100
+which are the top and bottom pins on the right side.
+/~say-score
+/~skip:NEXTT
+
+/~TWOO
+/~sound:correct.wav
+That's correct! The pins being displayed are 1 and 3.
+/~point
+/~say-score
+/~skip:NEXTT
+
+
+/~NEXTT
+/~disp-cell-clear:0
+/~sound:1.wav
+/~disp-cell-pins:0 00010100
+/~sound:2.wav
+/~sound:3.wav
+/~sound:4.wav
+/~sound:5.wav
+/~user-input
+
+/~ONEE
+/~sound:correct.wav
+/~sound:6.wav
+/~sound:7.wav
+/~sound:8.wav
+/~point
+/~say-score
+/~skip:NEXTT
+
+/~TWOO
+/~sound:wrong.wav
+/~sound:9.wav
+/~sound:10.wav
+/~sound:11.wav
+/~say-score
+/~skip:NEXTT
+
+/~NEXTT
+/~pause:1
+/~disp-cell-clear:0
+/~sound:12.wav
+/~disp-cell-pins:0 01100000
+/~sound:13.wav
+/~user-input
+
+/~ONEE
+/~sound:14.wav
+/~point
+/~skip:NEXTT
+
+/~TWOO
+/~sound:wrong.wav
+/~sound:15.wav
+/~skip:NEXTT
+
+/~NEXTT
+That's all for now! Thank you for playing two pin questions!
+/~say-final-score
+Have a nice day!
+/~disp-cell-clear:0
